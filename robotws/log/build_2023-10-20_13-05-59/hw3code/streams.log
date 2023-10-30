@@ -1,0 +1,35 @@
+[0.431s] Invoking command in '/home/stevens/robotws/build/hw3code': PYTHONPATH=/home/stevens/robotws/build/hw3code/prefix_override:/home/stevens/robotws/install/hw3code/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/stevens/robotws/build/hw3code/build --no-deps install_data
+[0.552s] running develop
+[0.552s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.552s]   warnings.warn(
+[0.553s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.553s]   warnings.warn(
+[0.635s] running egg_info
+[0.635s] creating hw3code.egg-info
+[0.635s] writing hw3code.egg-info/PKG-INFO
+[0.635s] writing dependency_links to hw3code.egg-info/dependency_links.txt
+[0.635s] writing entry points to hw3code.egg-info/entry_points.txt
+[0.635s] writing requirements to hw3code.egg-info/requires.txt
+[0.636s] writing top-level names to hw3code.egg-info/top_level.txt
+[0.636s] writing manifest file 'hw3code.egg-info/SOURCES.txt'
+[0.636s] reading manifest file 'hw3code.egg-info/SOURCES.txt'
+[0.636s] writing manifest file 'hw3code.egg-info/SOURCES.txt'
+[0.637s] running build_ext
+[0.637s] Creating /home/stevens/robotws/install/hw3code/lib/python3.10/site-packages/hw3code.egg-link (link to .)
+[0.637s] Installing hw3p4 script to /home/stevens/robotws/install/hw3code/lib/hw3code
+[0.637s] Installing hw3p5 script to /home/stevens/robotws/install/hw3code/lib/hw3code
+[0.637s] 
+[0.637s] Installed /home/stevens/robotws/build/hw3code
+[0.637s] running install_data
+[0.637s] creating /home/stevens/robotws/install/hw3code/share/ament_index
+[0.638s] creating /home/stevens/robotws/install/hw3code/share/ament_index/resource_index
+[0.638s] creating /home/stevens/robotws/install/hw3code/share/ament_index/resource_index/packages
+[0.638s] copying resource/hw3code -> /home/stevens/robotws/install/hw3code/share/ament_index/resource_index/packages
+[0.638s] copying package.xml -> /home/stevens/robotws/install/hw3code/share/hw3code
+[0.638s] creating /home/stevens/robotws/install/hw3code/share/hw3code/rviz
+[0.638s] copying rviz/viewurdf.rviz -> /home/stevens/robotws/install/hw3code/share/hw3code/rviz
+[0.638s] copying rviz/viewatlas.rviz -> /home/stevens/robotws/install/hw3code/share/hw3code/rviz
+[0.638s] creating /home/stevens/robotws/install/hw3code/share/hw3code/urdf
+[0.638s] copying urdf/pantilt.urdf -> /home/stevens/robotws/install/hw3code/share/hw3code/urdf
+[0.638s] copying urdf/threeDOF.urdf -> /home/stevens/robotws/install/hw3code/share/hw3code/urdf
+[0.648s] Invoked command in '/home/stevens/robotws/build/hw3code' returned '0': PYTHONPATH=/home/stevens/robotws/build/hw3code/prefix_override:/home/stevens/robotws/install/hw3code/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/stevens/robotws/build/hw3code/build --no-deps install_data

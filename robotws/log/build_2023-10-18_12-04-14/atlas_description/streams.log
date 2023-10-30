@@ -1,0 +1,108 @@
+[0.029s] Invoking command in '/home/stevens/robotws/build/atlas_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/stevens/robotws/src/atlas_description -DCMAKE_INSTALL_PREFIX=/home/stevens/robotws/install/atlas_description
+[0.052s] -- The C compiler identification is GNU 11.4.0
+[0.078s] -- The CXX compiler identification is GNU 11.4.0
+[0.082s] -- Detecting C compiler ABI info
+[0.131s] -- Detecting C compiler ABI info - done
+[0.135s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.135s] -- Detecting C compile features
+[0.135s] -- Detecting C compile features - done
+[0.138s] -- Detecting CXX compiler ABI info
+[0.236s] -- Detecting CXX compiler ABI info - done
+[0.239s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.239s] -- Detecting CXX compile features
+[0.239s] -- Detecting CXX compile features - done
+[0.240s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.330s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.371s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.412s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.413s] -- Added test 'lint_cmake' to check CMake code style
+[0.413s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.414s] -- Added test 'xmllint' to check XML markup files
+[0.414s] -- Configuring done
+[0.416s] -- Generating done
+[0.416s] -- Build files have been written to: /home/stevens/robotws/build/atlas_description
+[0.419s] Invoked command in '/home/stevens/robotws/build/atlas_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/stevens/robotws/src/atlas_description -DCMAKE_INSTALL_PREFIX=/home/stevens/robotws/install/atlas_description
+[0.419s] Invoking command in '/home/stevens/robotws/build/atlas_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/stevens/robotws/build/atlas_description -- -j24 -l24
+[0.446s] Invoked command in '/home/stevens/robotws/build/atlas_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/stevens/robotws/build/atlas_description -- -j24 -l24
+[0.473s] Invoking command in '/home/stevens/robotws/build/atlas_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/stevens/robotws/build/atlas_description
+[0.486s] -- Install configuration: ""
+[0.486s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/launch
+[0.486s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/launch/viewatlas.launch.py
+[0.486s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/launch/__init__.py
+[0.486s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes
+[0.486s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes/wheel.obj
+[0.490s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes/base_link.mtl
+[0.490s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes/base_link.obj
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes/wheel.mtl
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/rviz
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/rviz/viewurdf.rviz
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/rviz/viewatlas.rviz
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/rviz/urdf.rviz
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/src
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/src/__init__.py
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/urdf
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/urdf/atlas.urdf
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/urdf/atlasfixed.urdf
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/urdf/atlas_v5.urdf
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures
+[0.500s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/extremities_diffuse.png
+[0.504s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/drc_labels_1.jpg
+[0.504s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/right_leg_diffuse_unplugged.jpg
+[0.504s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/extremities_diffuse_unplugged.jpg
+[0.505s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/atlas_DRC_carbon_fiber.png
+[0.505s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/drc_extremities_diffuse.jpg
+[0.506s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/atlas_cage_and_camera_diffuse_flat.jpg
+[0.506s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/torso_diffuse_unplugged.jpg
+[0.507s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/torso_diffuse.png
+[0.508s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/drc_torso_head_diffuse.jpg
+[0.508s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/CMakeLists.txt
+[0.508s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/atlas_DRC_dark_1.png
+[0.509s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/drc_head_diffuse.png
+[0.510s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/textures/atlas_DRC_1.png
+[0.511s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/materials/CMakeLists.txt
+[0.511s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged
+[0.511s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/r_uarm.dae
+[0.511s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/mtorso.dae
+[0.511s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/r_lleg.dae
+[0.511s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/r_uglut.dae
+[0.511s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/r_hand.dae
+[0.511s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/ltorso.dae
+[0.511s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/r_scap.dae
+[0.511s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/r_farm.dae
+[0.511s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/l_scap.dae
+[0.512s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/l_foot.dae
+[0.512s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/r_uleg.dae
+[0.512s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/r_lglut.dae
+[0.512s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/l_clav.dae
+[0.512s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/l_lglut.dae
+[0.512s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/l_farm.dae
+[0.512s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/r_larm.dae
+[0.512s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/r_talus.dae
+[0.512s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/pelvis.dae
+[0.512s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/l_lleg.dae
+[0.512s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/l_uarm.dae
+[0.512s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/l_larm.dae
+[0.512s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/r_clav.dae
+[0.513s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/utorso.dae
+[0.513s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/r_foot.dae
+[0.513s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/l_hand.dae
+[0.513s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/l_talus.dae
+[0.513s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/l_uglut.dae
+[0.513s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/meshes_unplugged/l_uleg.dae
+[0.513s] -- Installing: /home/stevens/robotws/install/atlas_description/share/ament_index/resource_index/package_run_dependencies/atlas_description
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/ament_index/resource_index/parent_prefix_path/atlas_description
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/environment/ament_prefix_path.sh
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/environment/ament_prefix_path.dsv
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/environment/path.sh
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/environment/path.dsv
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/local_setup.bash
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/local_setup.sh
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/local_setup.zsh
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/local_setup.dsv
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/package.dsv
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/ament_index/resource_index/packages/atlas_description
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/cmake/atlas_descriptionConfig.cmake
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/cmake/atlas_descriptionConfig-version.cmake
+[0.514s] -- Installing: /home/stevens/robotws/install/atlas_description/share/atlas_description/package.xml
+[0.515s] Invoked command in '/home/stevens/robotws/build/atlas_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/stevens/robotws/build/atlas_description

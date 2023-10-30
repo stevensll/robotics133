@@ -1,0 +1,31 @@
+[0.585s] Invoking command in '/home/stevens/robotws/build/hw4code': PYTHONPATH=/home/stevens/robotws/build/hw4code/prefix_override:/home/stevens/robotws/install/hw4code/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/stevens/robotws/build/hw4code/build --no-deps install_data
+[0.705s] running develop
+[0.713s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.713s]   warnings.warn(
+[0.713s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.713s]   warnings.warn(
+[0.799s] running egg_info
+[0.799s] creating hw4code.egg-info
+[0.799s] writing hw4code.egg-info/PKG-INFO
+[0.800s] writing dependency_links to hw4code.egg-info/dependency_links.txt
+[0.800s] writing entry points to hw4code.egg-info/entry_points.txt
+[0.800s] writing requirements to hw4code.egg-info/requires.txt
+[0.800s] writing top-level names to hw4code.egg-info/top_level.txt
+[0.800s] writing manifest file 'hw4code.egg-info/SOURCES.txt'
+[0.800s] reading manifest file 'hw4code.egg-info/SOURCES.txt'
+[0.800s] writing manifest file 'hw4code.egg-info/SOURCES.txt'
+[0.800s] running build_ext
+[0.801s] Creating /home/stevens/robotws/install/hw4code/lib/python3.10/site-packages/hw4code.egg-link (link to .)
+[0.801s] 
+[0.801s] Installed /home/stevens/robotws/build/hw4code
+[0.801s] running install_data
+[0.801s] creating /home/stevens/robotws/install/hw4code/share/ament_index
+[0.801s] creating /home/stevens/robotws/install/hw4code/share/ament_index/resource_index
+[0.801s] creating /home/stevens/robotws/install/hw4code/share/ament_index/resource_index/packages
+[0.801s] copying resource/hw4code -> /home/stevens/robotws/install/hw4code/share/ament_index/resource_index/packages
+[0.801s] copying package.xml -> /home/stevens/robotws/install/hw4code/share/hw4code
+[0.801s] creating /home/stevens/robotws/install/hw4code/share/hw4code/urdf
+[0.801s] copying urdf/testrobot.urdf -> /home/stevens/robotws/install/hw4code/share/hw4code/urdf
+[0.801s] copying urdf/fourDOF.urdf -> /home/stevens/robotws/install/hw4code/share/hw4code/urdf
+[0.801s] copying urdf/fourDOFskeleton.urdf -> /home/stevens/robotws/install/hw4code/share/hw4code/urdf
+[0.813s] Invoked command in '/home/stevens/robotws/build/hw4code' returned '0': PYTHONPATH=/home/stevens/robotws/build/hw4code/prefix_override:/home/stevens/robotws/install/hw4code/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/stevens/robotws/build/hw4code/build --no-deps install_data

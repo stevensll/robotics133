@@ -1,0 +1,4 @@
+Invoking command in '/home/stevens/robotws/build/atlas_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stevens/robotws/install/hw3code:/opt/ros/humble /usr/bin/cmake --build /home/stevens/robotws/build/atlas_description -- -j24 -l24
+Invoked command in '/home/stevens/robotws/build/atlas_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stevens/robotws/install/hw3code:/opt/ros/humble /usr/bin/cmake --build /home/stevens/robotws/build/atlas_description -- -j24 -l24
+Invoking command in '/home/stevens/robotws/build/atlas_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stevens/robotws/install/hw3code:/opt/ros/humble /usr/bin/cmake --install /home/stevens/robotws/build/atlas_description
+Invoked command in '/home/stevens/robotws/build/atlas_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stevens/robotws/install/hw3code:/opt/ros/humble /usr/bin/cmake --install /home/stevens/robotws/build/atlas_description
