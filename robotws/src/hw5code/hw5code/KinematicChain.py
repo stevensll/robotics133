@@ -31,7 +31,7 @@ from std_msgs.msg               import String
 from urdf_parser_py.urdf        import Robot
 
 # Grab the utilities
-from hw5code.TransformHelpers   import *
+from TransformHelpers   import *
 
 
 #
@@ -223,24 +223,29 @@ class KinematicChain():
         # Walk the chain, one step at a time.  Record the T transform
         # w.r.t. world for each step.
         for s in self.steps:
-            FIXME - Note the step s contains:
-              s.Tshift     Transform w.r.t. the previous frame
-              s.elocal     Joint axis in the local frame
-              s.dof        Joint number
-              q[s.dof]     Joint position (angle for revolute, displacement for linear)
+            # FIXME - Note the step s contains:
+            #   s.Tshift     Transform w.r.t. the previous frame
+            #   s.elocal     Joint axis in the local frame
+            #   s.dof        Joint number
+            #   q[s.dof]     Joint position (angle for revolute, displacement for linear)
             
             # Take action based on the joint type.
             if s.type is Joint.REVOLUTE:
                 # Revolute is a rotation:
-                FIXME
+                R = Rote(s.elocal, q[s.dof])
+                p = pzero()
+                T_new = T_from_Rp(R,p)
             elif s.type is Joint.LINEAR:
                 # Linear is a translation:
-                FIXME
-            else
+                R = Reye()
+                p = s.elocal * q[s.dof]
+                T_new = T_from_Rp(R,p)
+            else:
                 # Fixed is only shifting.
-                FIXME
+                T_new = np.eye(4)
 
             # Store the info (w.r.t. world frame) into the step.
+            T = T @ s.Tshift @ T_new
             s.T = T
             s.p = p_from_T(T)
             s.R = R_from_T(T)
@@ -254,19 +259,19 @@ class KinematicChain():
         Jv = np.zeros((3,self.dofs))
         Jw = np.zeros((3,self.dofs))
         for s in self.steps:
-            FIXME AGAIN.  From the above, the step now includes:
-              s.p     Position w.r.t. world
-              s.e     Joint axis w.r.t. world
+            # FIXME AGAIN.  From the above, the step now includes:
+            #   s.p     Position w.r.t. world
+            #   s.e     Joint axis w.r.t. world
             
             # Take action based on the joint type.
             if s.type is Joint.REVOLUTE:
                 # Revolute is a rotation:
-                Jv[:,s.dof:s.dof+1] = FIXME
-                Jw[:,s.dof:s.dof+1] = FIXME
+                Jv[:,s.dof:s.dof+1] = cross(s.e, (ptip-s.p))
+                Jw[:,s.dof:s.dof+1] = s.e
             elif s.type is Joint.LINEAR:
                 # Linear is a translation:
-                Jv[:,s.dof:s.dof+1] = FIXME
-                Jw[:,s.dof:s.dof+1] = FIXME
+                Jv[:,s.dof:s.dof+1] = s.e
+                Jw[:,s.dof:s.dof+1] = np.zeroes(3)
 
         # Return the info
         return (ptip, Rtip, Jv, Jw)

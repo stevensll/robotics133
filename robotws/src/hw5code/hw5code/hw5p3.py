@@ -12,8 +12,8 @@ import numpy as np
 from math                       import pi, sin, cos, acos, atan2, sqrt, fmod
 
 # Grab the utilities
-from hw5code.GeneratorNode      import GeneratorNode
-from hw5code.TrajectoryUtils    import goto, spline, goto5, spline5
+from GeneratorNode      import GeneratorNode
+from TrajectoryUtils    import goto, spline, goto5, spline5
 
 
 #
@@ -34,16 +34,24 @@ class Trajectory():
 
     # Evaluate at the given time.
     def evaluate(self, t, dt):
-        # First modulo the time by 4 seconds
-        t = fmod(t, 4.0)
+        # First modulo the time by 6 seconds
+        if(t > 6):
+            return None
+        t = fmod(t, 6.0)
 
         # Compute the joint values.
-        if   (t < 2.0): (q, qdot) = goto(t    , 2.0, self.qA, self.qB)
-        else:           (q, qdot) = goto(t-2.0, 2.0, self.qB, self.qA)
-
-        # Return the position and velocity as flat python lists!
+        v_qB = spline(2, 4.0, self.qA, self.qC, 0,0)[1]
+        print(v_qB)
+        if   (t < 2.0):        (q, qdot) = spline(t    , 2.0, self.qA, self.qB, 0, v_qB)
+        elif (2.0 < t <= 4.0): (q, qdot) = spline(t-2.0, 2.0, self.qB, self.qC, v_qB, 0)
+        else:                  (q, qdot) = spline(t-4.0, 2.0, self.qC, self.qA, 0, 0)
+        
+        # get the time at qB for a continuous movement from qA to qC
+        print(spline(2, 4.0, self.qA, self.qC, 0,0))
+        
+        # Return the posiion and velocity as flat python lists!
         return (q.flatten().tolist(), qdot.flatten().tolist())
-
+     
 
 #
 #  Main Code
@@ -59,7 +67,6 @@ def main(args=None):
     # Spin, meaning keep running (taking care of the timer callbacks
     # and message passing), until interrupted or the trajectory ends.
     generator.spin()
-
     # Shutdown the node and ROS.
     generator.shutdown()
     rclpy.shutdown()

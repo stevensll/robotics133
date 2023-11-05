@@ -44,9 +44,9 @@ def newton_raphson(xgoal):
     # Set the initial joint value guess.
     q = np.array([0.0, np.pi/2, -np.pi/2]).reshape(3,1)
 
-    # only do a max 1 million iterations
+    # only do a max 21 iterations
     iteration_counter = 0
-    ITERATION_MAX = 1e6
+    ITERATION_MAX = 21
     
     error = xgoal - fkin(q)
     while np.linalg.norm(error) >  1e-12 and iteration_counter < ITERATION_MAX:
@@ -59,7 +59,7 @@ def newton_raphson(xgoal):
         print(np.linalg.norm(error))
         print(iteration_counter)
     
-    print(q)
+    print(unwrapped(q))
     print(elbow_up(q))
     print(wraps(q))
     # Create a plot of x distances to goal and q step sizes, for N steps.

@@ -13,11 +13,11 @@ import numpy as np
 from math                       import pi, sin, cos, acos, atan2, sqrt, fmod
 
 # Grab the utilities
-from hw5code.GeneratorNode      import GeneratorNode
-from hw5code.TrajectoryUtils    import goto, spline, goto5, spline5
+from GeneratorNode      import GeneratorNode
+from TrajectoryUtils    import goto, spline, goto5, spline5
 
 # Grab the fkin and Jac from P1.
-from hw5code.hw5p1              import fkin, Jac
+from hw5p1              import fkin, Jac
 
 
 #
@@ -30,14 +30,14 @@ class Trajectory():
         self.qA = np.radians(np.array([ 0, 60, -120])).reshape(3,1)
         self.xA = fkin(self.qA)
 
-        self.qD = None
+        self.qD = np.array(self.qA)
         self.xD = np.array([0.5, -0.5, 1.0]).reshape(3,1)
 
         # Select the leg duration.
         self.T = 3.0
 
         # Initialize the parameters and anything stored between cycles!
-        ....
+        self.lamb = 20
 
     # Declare the joint names.
     def jointnames(self):
@@ -47,16 +47,34 @@ class Trajectory():
     # Evaluate at the given time.
     def evaluate(self, t, dt):
         # End after one cycle.
-        #if (t > 2*self.T):
-        #   return None
+        if (t > 2*self.T):
+          return None
         
         # First modulo the time by 2 legs.
         t = fmod(t, 2*self.T)
 
         # COMPUTE THE MOTION.
-        ....
-
+        q = self.qD
+        q_t_dt = q
+        qdot = np.array([0.0,0.0,0.0]).reshape(3,1)
+        if (t < self.T):
+            q_t_dt = q 
+            # get the translational position and velocity
+            x_t, x_t_dot       = goto(t,    self.T, self.xA, self.xD)
+            x_t_dt, x_t_dt_dot = goto(t-dt, self.T, self.xA, self.xD)
+            # note that q(t-dt) is q at this point, we didn't update q yet
+            x_diff = x_t_dt - fkin(q_t_dt)
+            # find the respective angular velocity
+            qdot = np.linalg.inv(Jac(q)) @ (x_t_dot + self.lamb * x_diff)
+            # numerically integrate the angle 
+            print(t, self.qA)
+            q+=qdot * dt
+            self.qD = q
+        else:
+        # return from qD to qA smoothly without care for the tip position
+            q, qdot = goto(t-3.0, self.T, self.qD, self.qA)
         # Return the position and velocity as python lists!
+        # print(t,self.qA)
         return (q.flatten().tolist(), qdot.flatten().tolist())
 
 
