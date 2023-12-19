@@ -1,1 +1,0 @@
-/home/stevens/robotws/src/atlas_description/src/__init__.py
