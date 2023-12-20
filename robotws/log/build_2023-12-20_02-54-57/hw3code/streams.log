@@ -1,0 +1,115 @@
+[1.019s] Invoking command in '/home/stevens/Documents/robotics133/robotws/build/hw3code': DEBUGINFOD_URLS=https://debuginfod.fedoraproject.org/ OLDPWD=${OLDPWD}
+BASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+}
+BASH_FUNC_module%%=() {  if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
+ case "$-" in
+ *v*x*)
+ __lmod_sh_dbg='vx'
+ ;;
+ *v*)
+ __lmod_sh_dbg='v'
+ ;;
+ *x*)
+ __lmod_sh_dbg='x'
+ ;;
+ esac;
+ fi;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ set +$__lmod_sh_dbg;
+ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;
+ fi;
+ eval "$($LMOD_CMD shell "$@")" && eval "$(${LMOD_SETTARG_CMD:-:} -s sh)";
+ __lmod_my_status=$?;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ echo "Shell debugging restarted" 1>&2;
+ set -$__lmod_sh_dbg;
+ fi;
+ unset __lmod_sh_dbg;
+ return $__lmod_my_status
+} PYTHONPATH=/home/stevens/Documents/robotics133/robotws/build/hw3code/prefix_override:/home/stevens/Documents/robotics133/robotws/install/hw3code/lib/python3.12/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py develop --editable --build-directory /home/stevens/Documents/robotics133/robotws/build/hw3code/build --no-deps install_data
+[1.338s] running develop
+[1.338s] /home/stevens/.local/lib/python3.12/site-packages/setuptools/command/develop.py:39: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.338s] !!
+[1.338s] 
+[1.338s]         ********************************************************************************
+[1.338s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.339s]         Instead, use pypa/build, pypa/installer or other
+[1.339s]         standards-based tools.
+[1.339s] 
+[1.339s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.339s]         ********************************************************************************
+[1.339s] 
+[1.339s] !!
+[1.339s]   easy_install.initialize_options(self)
+[1.380s] /home/stevens/.local/lib/python3.12/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.380s] !!
+[1.380s] 
+[1.380s]         ********************************************************************************
+[1.380s]         Please avoid running ``setup.py`` directly.
+[1.380s]         Instead, use pypa/build, pypa/installer or other
+[1.380s]         standards-based tools.
+[1.380s] 
+[1.380s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.380s]         ********************************************************************************
+[1.380s] 
+[1.380s] !!
+[1.381s]   self.initialize_options()
+[1.541s] running egg_info
+[1.541s] creating hw3code.egg-info
+[1.560s] writing hw3code.egg-info/PKG-INFO
+[1.561s] writing dependency_links to hw3code.egg-info/dependency_links.txt
+[1.561s] writing entry points to hw3code.egg-info/entry_points.txt
+[1.561s] writing requirements to hw3code.egg-info/requires.txt
+[1.561s] writing top-level names to hw3code.egg-info/top_level.txt
+[1.561s] writing manifest file 'hw3code.egg-info/SOURCES.txt'
+[1.600s] reading manifest file 'hw3code.egg-info/SOURCES.txt'
+[1.601s] writing manifest file 'hw3code.egg-info/SOURCES.txt'
+[1.622s] running build_ext
+[1.622s] Creating /home/stevens/Documents/robotics133/robotws/install/hw3code/lib/python3.12/site-packages/hw3code.egg-link (link to .)
+[1.623s] Installing hw3p4 script to /home/stevens/Documents/robotics133/robotws/install/hw3code/lib/hw3code
+[1.623s] Installing hw3p5 script to /home/stevens/Documents/robotics133/robotws/install/hw3code/lib/hw3code
+[1.623s] 
+[1.623s] Installed /home/stevens/Documents/robotics133/robotws/build/hw3code
+[1.623s] running install_data
+[1.623s] creating /home/stevens/Documents/robotics133/robotws/install/hw3code/share/ament_index
+[1.623s] creating /home/stevens/Documents/robotics133/robotws/install/hw3code/share/ament_index/resource_index
+[1.623s] creating /home/stevens/Documents/robotics133/robotws/install/hw3code/share/ament_index/resource_index/packages
+[1.624s] copying resource/hw3code -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/ament_index/resource_index/packages
+[1.624s] copying package.xml -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code
+[1.624s] creating /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/rviz
+[1.624s] copying rviz/viewurdf.rviz -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/rviz
+[1.624s] copying rviz/viewatlas.rviz -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/rviz
+[1.624s] creating /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/urdf
+[1.624s] copying urdf/pantilt.urdf -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/urdf
+[1.624s] copying urdf/hw3code -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/urdf
+[1.624s] copying urdf/hw3p5.py -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/urdf
+[1.625s] copying urdf/threeDOF.urdf -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/urdf
+[1.681s] Invoked command in '/home/stevens/Documents/robotics133/robotws/build/hw3code' returned '0': DEBUGINFOD_URLS=https://debuginfod.fedoraproject.org/ OLDPWD=${OLDPWD}
+BASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+}
+BASH_FUNC_module%%=() {  if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
+ case "$-" in
+ *v*x*)
+ __lmod_sh_dbg='vx'
+ ;;
+ *v*)
+ __lmod_sh_dbg='v'
+ ;;
+ *x*)
+ __lmod_sh_dbg='x'
+ ;;
+ esac;
+ fi;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ set +$__lmod_sh_dbg;
+ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;
+ fi;
+ eval "$($LMOD_CMD shell "$@")" && eval "$(${LMOD_SETTARG_CMD:-:} -s sh)";
+ __lmod_my_status=$?;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ echo "Shell debugging restarted" 1>&2;
+ set -$__lmod_sh_dbg;
+ fi;
+ unset __lmod_sh_dbg;
+ return $__lmod_my_status
+} PYTHONPATH=/home/stevens/Documents/robotics133/robotws/build/hw3code/prefix_override:/home/stevens/Documents/robotics133/robotws/install/hw3code/lib/python3.12/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py develop --editable --build-directory /home/stevens/Documents/robotics133/robotws/build/hw3code/build --no-deps install_data

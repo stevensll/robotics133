@@ -1,0 +1,117 @@
+[1.067s] Invoking command in '/home/stevens/Documents/robotics133/robotws/build/finalprojectcode': DEBUGINFOD_URLS=https://debuginfod.fedoraproject.org/ OLDPWD=${OLDPWD}
+BASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+}
+BASH_FUNC_module%%=() {  if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
+ case "$-" in
+ *v*x*)
+ __lmod_sh_dbg='vx'
+ ;;
+ *v*)
+ __lmod_sh_dbg='v'
+ ;;
+ *x*)
+ __lmod_sh_dbg='x'
+ ;;
+ esac;
+ fi;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ set +$__lmod_sh_dbg;
+ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;
+ fi;
+ eval "$($LMOD_CMD shell "$@")" && eval "$(${LMOD_SETTARG_CMD:-:} -s sh)";
+ __lmod_my_status=$?;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ echo "Shell debugging restarted" 1>&2;
+ set -$__lmod_sh_dbg;
+ fi;
+ unset __lmod_sh_dbg;
+ return $__lmod_my_status
+} PYTHONPATH=/home/stevens/Documents/robotics133/robotws/build/finalprojectcode/prefix_override:/home/stevens/Documents/robotics133/robotws/install/finalprojectcode/lib/python3.12/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py develop --editable --build-directory /home/stevens/Documents/robotics133/robotws/build/finalprojectcode/build --no-deps install_data
+[1.382s] running develop
+[1.383s] /home/stevens/.local/lib/python3.12/site-packages/setuptools/command/develop.py:39: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.383s] !!
+[1.383s] 
+[1.383s]         ********************************************************************************
+[1.383s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.383s]         Instead, use pypa/build, pypa/installer or other
+[1.383s]         standards-based tools.
+[1.383s] 
+[1.383s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.383s]         ********************************************************************************
+[1.383s] 
+[1.383s] !!
+[1.383s]   easy_install.initialize_options(self)
+[1.423s] /home/stevens/.local/lib/python3.12/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.423s] !!
+[1.423s] 
+[1.423s]         ********************************************************************************
+[1.423s]         Please avoid running ``setup.py`` directly.
+[1.424s]         Instead, use pypa/build, pypa/installer or other
+[1.424s]         standards-based tools.
+[1.424s] 
+[1.424s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.424s]         ********************************************************************************
+[1.424s] 
+[1.424s] !!
+[1.424s]   self.initialize_options()
+[1.582s] running egg_info
+[1.582s] creating finalprojectcode.egg-info
+[1.602s] writing finalprojectcode.egg-info/PKG-INFO
+[1.602s] writing dependency_links to finalprojectcode.egg-info/dependency_links.txt
+[1.603s] writing entry points to finalprojectcode.egg-info/entry_points.txt
+[1.603s] writing requirements to finalprojectcode.egg-info/requires.txt
+[1.603s] writing top-level names to finalprojectcode.egg-info/top_level.txt
+[1.603s] writing manifest file 'finalprojectcode.egg-info/SOURCES.txt'
+[1.642s] reading manifest file 'finalprojectcode.egg-info/SOURCES.txt'
+[1.643s] writing manifest file 'finalprojectcode.egg-info/SOURCES.txt'
+[1.664s] running build_ext
+[1.664s] Creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/lib/python3.12/site-packages/finalprojectcode.egg-link (link to .)
+[1.664s] Installing finalproject script to /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/lib/finalprojectcode
+[1.665s] 
+[1.665s] Installed /home/stevens/Documents/robotics133/robotws/build/finalprojectcode
+[1.665s] running install_data
+[1.665s] creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/ament_index
+[1.665s] creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/ament_index/resource_index
+[1.665s] creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/ament_index/resource_index/packages
+[1.665s] copying resource/finalprojectcode -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/ament_index/resource_index/packages
+[1.665s] copying package.xml -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode
+[1.665s] creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/launch
+[1.666s] copying launch/finalproject.launch.py -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/launch
+[1.666s] creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/meshes
+[1.666s] copying meshes/Bottom.dae -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/meshes
+[1.666s] copying meshes/UJ_Shaft.dae -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/meshes
+[1.667s] copying meshes/Slider_Base.dae -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/meshes
+[1.667s] copying meshes/Platform_Top.dae -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/meshes
+[1.667s] copying meshes/Slider_Shaft.dae -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/meshes
+[1.668s] creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/urdf
+[1.668s] copying urdf/temp.urdf -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/urdf
+[1.668s] copying urdf/stewart.urdf -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/urdf
+[1.724s] Invoked command in '/home/stevens/Documents/robotics133/robotws/build/finalprojectcode' returned '0': DEBUGINFOD_URLS=https://debuginfod.fedoraproject.org/ OLDPWD=${OLDPWD}
+BASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+}
+BASH_FUNC_module%%=() {  if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
+ case "$-" in
+ *v*x*)
+ __lmod_sh_dbg='vx'
+ ;;
+ *v*)
+ __lmod_sh_dbg='v'
+ ;;
+ *x*)
+ __lmod_sh_dbg='x'
+ ;;
+ esac;
+ fi;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ set +$__lmod_sh_dbg;
+ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;
+ fi;
+ eval "$($LMOD_CMD shell "$@")" && eval "$(${LMOD_SETTARG_CMD:-:} -s sh)";
+ __lmod_my_status=$?;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ echo "Shell debugging restarted" 1>&2;
+ set -$__lmod_sh_dbg;
+ fi;
+ unset __lmod_sh_dbg;
+ return $__lmod_my_status
+} PYTHONPATH=/home/stevens/Documents/robotics133/robotws/build/finalprojectcode/prefix_override:/home/stevens/Documents/robotics133/robotws/install/finalprojectcode/lib/python3.12/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py develop --editable --build-directory /home/stevens/Documents/robotics133/robotws/build/finalprojectcode/build --no-deps install_data

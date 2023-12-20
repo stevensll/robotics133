@@ -1,0 +1,145 @@
+[0.000000] (-) TimerEvent: {}
+[0.000804] (finalprojectcode) JobQueued: {'identifier': 'finalprojectcode', 'dependencies': OrderedDict()}
+[0.000862] (hw3code) JobQueued: {'identifier': 'hw3code', 'dependencies': OrderedDict()}
+[0.000889] (finalprojectcode) JobStarted: {'identifier': 'finalprojectcode'}
+[0.026691] (hw3code) JobStarted: {'identifier': 'hw3code'}
+[0.099874] (-) TimerEvent: {}
+[0.200322] (-) TimerEvent: {}
+[0.300700] (-) TimerEvent: {}
+[0.401103] (-) TimerEvent: {}
+[0.501463] (-) TimerEvent: {}
+[0.601814] (-) TimerEvent: {}
+[0.702133] (-) TimerEvent: {}
+[0.802472] (-) TimerEvent: {}
+[0.902793] (-) TimerEvent: {}
+[1.003120] (-) TimerEvent: {}
+[1.041710] (hw3code) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/stevens/Documents/robotics133/robotws/build/hw3code/build', '--no-deps', 'install_data'], 'cwd': '/home/stevens/Documents/robotics133/robotws/build/hw3code', 'env': {'SHELL': '/bin/bash', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/unix:@/tmp/.ICE-unix/2377,unix/unix:/tmp/.ICE-unix/2377', 'COLORTERM': 'truecolor', 'HISTCONTROL': 'ignoredups', 'XDG_MENU_PREFIX': 'gnome-', 'PKG_CONFIG_PATH': '/usr/lib64/ros2-humble/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'new-host-3', 'HISTSIZE': '1000', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'gnome', 'LMOD_DIR': '/usr/share/lmod/lmod/libexec', 'EDITOR': '/usr/bin/nano', 'PWD': '/home/stevens/Documents/robotics133/robotws/build/hw3code', 'XDG_SESSION_DESKTOP': 'gnome', 'LOGNAME': 'stevens', 'XDG_SESSION_TYPE': 'wayland', 'MODULESHOME': '/usr/share/lmod/lmod', 'MANPATH': '/usr/share/lmod/lmod/share/man:', 'SYSTEMD_EXEC_PID': '2445', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.BFLWF2', 'GDM_LANG': 'en_US.UTF-8', 'HOME': '/home/stevens', 'USERNAME': 'stevens', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:', 'XDG_CURRENT_DESKTOP': 'GNOME', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'VTE_VERSION': '7401', 'WAYLAND_DISPLAY': 'wayland-0', 'LMOD_SETTARG_FULL_SUPPORT': 'no', 'AMENT_PREFIX_PATH': '/home/stevens/Documents/robotics133/robotws/install/hw3code:/home/stevens/Documents/robotics133/robotws/install/finalprojectcode:/usr/lib64/ros2-humble', 'CMAKE_PREFIX_PATH': '/usr/lib64/ros2-humble', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6cd395b8_7201_47b4_8d4a_5ff3cf41dccb', 'COLCON_PREFIX_PATH': '/home/stevens/Documents/robotics133/robotws/install:/usr/lib64/ros2-humble', 'LMOD_VERSION': '8.7.32', 'QT_QPA_PLATFORM': 'xcb', 'MODULEPATH_ROOT': '/usr/share/modulefiles', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_SESSION_CLASS': 'user', 'LMOD_PKG': '/usr/share/lmod/lmod', 'PYTHONPATH': '/home/stevens/Documents/robotics133/robotws/build/hw3code/prefix_override:/home/stevens/Documents/robotics133/robotws/install/hw3code/lib/python3.12/site-packages:/home/stevens/Documents/robotics133/robotws/build/my-test-package:/home/stevens/Documents/robotics133/robotws/install/my-test-package/lib/python3.12/site-packages:/home/stevens/Documents/robotics133/robotws/build/hw3code:/home/stevens/Documents/robotics133/robotws/install/hw3code/lib/python3.12/site-packages:/home/stevens/Documents/robotics133/robotws/build/finalprojectcode:/home/stevens/Documents/robotics133/robotws/install/finalprojectcode/lib/python3.12/site-packages:/usr/lib64/ros2-humble/lib/python3.12/site-packages', 'COLCON': '1', 'TERM': 'xterm-256color', 'LESSOPEN': '||/usr/bin/lesspipe.sh %s', 'USER': 'stevens', 'GNOME_TERMINAL_SERVICE': ':1.2210', 'DISPLAY': ':0', 'LMOD_ROOT': '/usr/share/lmod', 'SHLVL': '1', 'BASH_ENV': '/usr/share/lmod/lmod/init/bash', 'LMOD_sys': 'Linux', 'QT_IM_MODULE': 'ibus', 'LD_LIBRARY_PATH': '/usr/lib64/ros2-humble/opt/rviz_ogre_vendor/lib:/usr/lib64/ros2-humble/lib64:/usr/lib64/ros2-humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'DEBUGINFOD_URLS': 'https://debuginfod.fedoraproject.org/', 'XDG_DATA_DIRS': '/home/stevens/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/', 'PATH': '/usr/lib64/ros2-humble/bin:/home/stevens/.cargo/bin:/home/stevens/.local/bin:/home/stevens/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin', 'MODULEPATH': '/etc/modulefiles:/usr/share/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core', 'GDMSESSION': 'gnome', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LMOD_CMD': '/usr/share/lmod/lmod/libexec/lmod', 'MAIL': '/var/spool/mail/stevens', 'ROS_DISTRO': 'humble', 'OLDPWD': '/home/stevens/Documents\nBASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"\n}\nBASH_FUNC_module%%=() {  if [ -z "${LMOD_SH_DBG_ON+x}" ]; then\n case "$-" in\n *v*x*)\n __lmod_sh_dbg=\'vx\'\n ;;\n *v*)\n __lmod_sh_dbg=\'v\'\n ;;\n *x*)\n __lmod_sh_dbg=\'x\'\n ;;\n esac;\n fi;\n if [ -n "${__lmod_sh_dbg:-}" ]; then\n set +$__lmod_sh_dbg;\n echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod\'s output" 1>&2;\n fi;\n eval "$($LMOD_CMD shell "$@")" && eval "$(${LMOD_SETTARG_CMD:-:} -s sh)";\n __lmod_my_status=$?;\n if [ -n "${__lmod_sh_dbg:-}" ]; then\n echo "Shell debugging restarted" 1>&2;\n set -$__lmod_sh_dbg;\n fi;\n unset __lmod_sh_dbg;\n return $__lmod_my_status\n}', '_': '/usr/bin/env'}, 'shell': False}
+[1.067169] (finalprojectcode) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/stevens/Documents/robotics133/robotws/build/finalprojectcode/build', '--no-deps', 'install_data'], 'cwd': '/home/stevens/Documents/robotics133/robotws/build/finalprojectcode', 'env': {'SHELL': '/bin/bash', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/unix:@/tmp/.ICE-unix/2377,unix/unix:/tmp/.ICE-unix/2377', 'COLORTERM': 'truecolor', 'HISTCONTROL': 'ignoredups', 'XDG_MENU_PREFIX': 'gnome-', 'PKG_CONFIG_PATH': '/usr/lib64/ros2-humble/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'new-host-3', 'HISTSIZE': '1000', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'gnome', 'LMOD_DIR': '/usr/share/lmod/lmod/libexec', 'EDITOR': '/usr/bin/nano', 'PWD': '/home/stevens/Documents/robotics133/robotws/build/finalprojectcode', 'XDG_SESSION_DESKTOP': 'gnome', 'LOGNAME': 'stevens', 'XDG_SESSION_TYPE': 'wayland', 'MODULESHOME': '/usr/share/lmod/lmod', 'MANPATH': '/usr/share/lmod/lmod/share/man:', 'SYSTEMD_EXEC_PID': '2445', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.BFLWF2', 'GDM_LANG': 'en_US.UTF-8', 'HOME': '/home/stevens', 'USERNAME': 'stevens', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:', 'XDG_CURRENT_DESKTOP': 'GNOME', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'VTE_VERSION': '7401', 'WAYLAND_DISPLAY': 'wayland-0', 'LMOD_SETTARG_FULL_SUPPORT': 'no', 'AMENT_PREFIX_PATH': '/home/stevens/Documents/robotics133/robotws/install/hw3code:/home/stevens/Documents/robotics133/robotws/install/finalprojectcode:/usr/lib64/ros2-humble', 'CMAKE_PREFIX_PATH': '/usr/lib64/ros2-humble', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6cd395b8_7201_47b4_8d4a_5ff3cf41dccb', 'COLCON_PREFIX_PATH': '/home/stevens/Documents/robotics133/robotws/install:/usr/lib64/ros2-humble', 'LMOD_VERSION': '8.7.32', 'QT_QPA_PLATFORM': 'xcb', 'MODULEPATH_ROOT': '/usr/share/modulefiles', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_SESSION_CLASS': 'user', 'LMOD_PKG': '/usr/share/lmod/lmod', 'PYTHONPATH': '/home/stevens/Documents/robotics133/robotws/build/finalprojectcode/prefix_override:/home/stevens/Documents/robotics133/robotws/install/finalprojectcode/lib/python3.12/site-packages:/home/stevens/Documents/robotics133/robotws/build/my-test-package:/home/stevens/Documents/robotics133/robotws/install/my-test-package/lib/python3.12/site-packages:/home/stevens/Documents/robotics133/robotws/build/hw3code:/home/stevens/Documents/robotics133/robotws/install/hw3code/lib/python3.12/site-packages:/home/stevens/Documents/robotics133/robotws/build/finalprojectcode:/home/stevens/Documents/robotics133/robotws/install/finalprojectcode/lib/python3.12/site-packages:/usr/lib64/ros2-humble/lib/python3.12/site-packages', 'COLCON': '1', 'TERM': 'xterm-256color', 'LESSOPEN': '||/usr/bin/lesspipe.sh %s', 'USER': 'stevens', 'GNOME_TERMINAL_SERVICE': ':1.2210', 'DISPLAY': ':0', 'LMOD_ROOT': '/usr/share/lmod', 'SHLVL': '1', 'BASH_ENV': '/usr/share/lmod/lmod/init/bash', 'LMOD_sys': 'Linux', 'QT_IM_MODULE': 'ibus', 'LD_LIBRARY_PATH': '/usr/lib64/ros2-humble/opt/rviz_ogre_vendor/lib:/usr/lib64/ros2-humble/lib64:/usr/lib64/ros2-humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'DEBUGINFOD_URLS': 'https://debuginfod.fedoraproject.org/', 'XDG_DATA_DIRS': '/home/stevens/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/', 'PATH': '/usr/lib64/ros2-humble/bin:/home/stevens/.cargo/bin:/home/stevens/.local/bin:/home/stevens/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin', 'MODULEPATH': '/etc/modulefiles:/usr/share/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core', 'GDMSESSION': 'gnome', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LMOD_CMD': '/usr/share/lmod/lmod/libexec/lmod', 'MAIL': '/var/spool/mail/stevens', 'ROS_DISTRO': 'humble', 'OLDPWD': '/home/stevens/Documents\nBASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"\n}\nBASH_FUNC_module%%=() {  if [ -z "${LMOD_SH_DBG_ON+x}" ]; then\n case "$-" in\n *v*x*)\n __lmod_sh_dbg=\'vx\'\n ;;\n *v*)\n __lmod_sh_dbg=\'v\'\n ;;\n *x*)\n __lmod_sh_dbg=\'x\'\n ;;\n esac;\n fi;\n if [ -n "${__lmod_sh_dbg:-}" ]; then\n set +$__lmod_sh_dbg;\n echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod\'s output" 1>&2;\n fi;\n eval "$($LMOD_CMD shell "$@")" && eval "$(${LMOD_SETTARG_CMD:-:} -s sh)";\n __lmod_my_status=$?;\n if [ -n "${__lmod_sh_dbg:-}" ]; then\n echo "Shell debugging restarted" 1>&2;\n set -$__lmod_sh_dbg;\n fi;\n unset __lmod_sh_dbg;\n return $__lmod_my_status\n}', '_': '/usr/bin/env'}, 'shell': False}
+[1.103274] (-) TimerEvent: {}
+[1.203649] (-) TimerEvent: {}
+[1.303964] (-) TimerEvent: {}
+[1.364423] (hw3code) StdoutLine: {'line': b'running develop\n'}
+[1.364819] (hw3code) StderrLine: {'line': b'/home/stevens/.local/lib/python3.12/site-packages/setuptools/command/develop.py:39: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[1.364936] (hw3code) StderrLine: {'line': b'!!\n'}
+[1.365012] (hw3code) StderrLine: {'line': b'\n'}
+[1.365080] (hw3code) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.365145] (hw3code) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[1.365210] (hw3code) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[1.365313] (hw3code) StderrLine: {'line': b'        standards-based tools.\n'}
+[1.365384] (hw3code) StderrLine: {'line': b'\n'}
+[1.365446] (hw3code) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[1.365508] (hw3code) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.365569] (hw3code) StderrLine: {'line': b'\n'}
+[1.365629] (hw3code) StderrLine: {'line': b'!!\n'}
+[1.365688] (hw3code) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[1.383060] (finalprojectcode) StdoutLine: {'line': b'running develop\n'}
+[1.383310] (finalprojectcode) StderrLine: {'line': b'/home/stevens/.local/lib/python3.12/site-packages/setuptools/command/develop.py:39: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[1.383434] (finalprojectcode) StderrLine: {'line': b'!!\n'}
+[1.383507] (finalprojectcode) StderrLine: {'line': b'\n'}
+[1.383573] (finalprojectcode) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.383637] (finalprojectcode) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[1.383714] (finalprojectcode) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[1.383786] (finalprojectcode) StderrLine: {'line': b'        standards-based tools.\n'}
+[1.383847] (finalprojectcode) StderrLine: {'line': b'\n'}
+[1.383906] (finalprojectcode) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[1.383968] (finalprojectcode) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.384038] (finalprojectcode) StderrLine: {'line': b'\n'}
+[1.384100] (finalprojectcode) StderrLine: {'line': b'!!\n'}
+[1.384161] (finalprojectcode) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[1.404045] (-) TimerEvent: {}
+[1.406333] (hw3code) StderrLine: {'line': b'/home/stevens/.local/lib/python3.12/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[1.406474] (hw3code) StderrLine: {'line': b'!!\n'}
+[1.406548] (hw3code) StderrLine: {'line': b'\n'}
+[1.406615] (hw3code) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.406684] (hw3code) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[1.406749] (hw3code) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[1.406812] (hw3code) StderrLine: {'line': b'        standards-based tools.\n'}
+[1.406875] (hw3code) StderrLine: {'line': b'\n'}
+[1.406937] (hw3code) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[1.407001] (hw3code) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.407063] (hw3code) StderrLine: {'line': b'\n'}
+[1.407134] (hw3code) StderrLine: {'line': b'!!\n'}
+[1.407213] (hw3code) StderrLine: {'line': b'  self.initialize_options()\n'}
+[1.423944] (finalprojectcode) StderrLine: {'line': b'/home/stevens/.local/lib/python3.12/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[1.424082] (finalprojectcode) StderrLine: {'line': b'!!\n'}
+[1.424159] (finalprojectcode) StderrLine: {'line': b'\n'}
+[1.424227] (finalprojectcode) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.424328] (finalprojectcode) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[1.424396] (finalprojectcode) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[1.424460] (finalprojectcode) StderrLine: {'line': b'        standards-based tools.\n'}
+[1.424524] (finalprojectcode) StderrLine: {'line': b'\n'}
+[1.424586] (finalprojectcode) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[1.424650] (finalprojectcode) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.424717] (finalprojectcode) StderrLine: {'line': b'\n'}
+[1.424782] (finalprojectcode) StderrLine: {'line': b'!!\n'}
+[1.424843] (finalprojectcode) StderrLine: {'line': b'  self.initialize_options()\n'}
+[1.504171] (-) TimerEvent: {}
+[1.567144] (hw3code) StdoutLine: {'line': b'running egg_info\n'}
+[1.567380] (hw3code) StdoutLine: {'line': b'creating hw3code.egg-info\n'}
+[1.583055] (finalprojectcode) StdoutLine: {'line': b'running egg_info\n'}
+[1.583223] (finalprojectcode) StdoutLine: {'line': b'creating finalprojectcode.egg-info\n'}
+[1.586886] (hw3code) StdoutLine: {'line': b'writing hw3code.egg-info/PKG-INFO\n'}
+[1.587411] (hw3code) StdoutLine: {'line': b'writing dependency_links to hw3code.egg-info/dependency_links.txt\n'}
+[1.587593] (hw3code) StdoutLine: {'line': b'writing entry points to hw3code.egg-info/entry_points.txt\n'}
+[1.587743] (hw3code) StdoutLine: {'line': b'writing requirements to hw3code.egg-info/requires.txt\n'}
+[1.587868] (hw3code) StdoutLine: {'line': b'writing top-level names to hw3code.egg-info/top_level.txt\n'}
+[1.587987] (hw3code) StdoutLine: {'line': b"writing manifest file 'hw3code.egg-info/SOURCES.txt'\n"}
+[1.602742] (finalprojectcode) StdoutLine: {'line': b'writing finalprojectcode.egg-info/PKG-INFO\n'}
+[1.603220] (finalprojectcode) StdoutLine: {'line': b'writing dependency_links to finalprojectcode.egg-info/dependency_links.txt\n'}
+[1.603396] (finalprojectcode) StdoutLine: {'line': b'writing entry points to finalprojectcode.egg-info/entry_points.txt\n'}
+[1.603537] (finalprojectcode) StdoutLine: {'line': b'writing requirements to finalprojectcode.egg-info/requires.txt\n'}
+[1.603642] (finalprojectcode) StdoutLine: {'line': b'writing top-level names to finalprojectcode.egg-info/top_level.txt\n'}
+[1.603738] (finalprojectcode) StdoutLine: {'line': b"writing manifest file 'finalprojectcode.egg-info/SOURCES.txt'\n"}
+[1.604257] (-) TimerEvent: {}
+[1.626851] (hw3code) StdoutLine: {'line': b"reading manifest file 'hw3code.egg-info/SOURCES.txt'\n"}
+[1.627492] (hw3code) StdoutLine: {'line': b"writing manifest file 'hw3code.egg-info/SOURCES.txt'\n"}
+[1.642992] (finalprojectcode) StdoutLine: {'line': b"reading manifest file 'finalprojectcode.egg-info/SOURCES.txt'\n"}
+[1.643699] (finalprojectcode) StdoutLine: {'line': b"writing manifest file 'finalprojectcode.egg-info/SOURCES.txt'\n"}
+[1.648311] (hw3code) StdoutLine: {'line': b'running build_ext\n'}
+[1.648484] (hw3code) StdoutLine: {'line': b'Creating /home/stevens/Documents/robotics133/robotws/install/hw3code/lib/python3.12/site-packages/hw3code.egg-link (link to .)\n'}
+[1.649183] (hw3code) StdoutLine: {'line': b'Installing hw3p4 script to /home/stevens/Documents/robotics133/robotws/install/hw3code/lib/hw3code\n'}
+[1.649434] (hw3code) StdoutLine: {'line': b'Installing hw3p5 script to /home/stevens/Documents/robotics133/robotws/install/hw3code/lib/hw3code\n'}
+[1.649651] (hw3code) StdoutLine: {'line': b'\n'}
+[1.649773] (hw3code) StdoutLine: {'line': b'Installed /home/stevens/Documents/robotics133/robotws/build/hw3code\n'}
+[1.649902] (hw3code) StdoutLine: {'line': b'running install_data\n'}
+[1.649993] (hw3code) StdoutLine: {'line': b'creating /home/stevens/Documents/robotics133/robotws/install/hw3code/share/ament_index\n'}
+[1.650057] (hw3code) StdoutLine: {'line': b'creating /home/stevens/Documents/robotics133/robotws/install/hw3code/share/ament_index/resource_index\n'}
+[1.650114] (hw3code) StdoutLine: {'line': b'creating /home/stevens/Documents/robotics133/robotws/install/hw3code/share/ament_index/resource_index/packages\n'}
+[1.650206] (hw3code) StdoutLine: {'line': b'copying resource/hw3code -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/ament_index/resource_index/packages\n'}
+[1.650313] (hw3code) StdoutLine: {'line': b'copying package.xml -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code\n'}
+[1.650386] (hw3code) StdoutLine: {'line': b'creating /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/rviz\n'}
+[1.650460] (hw3code) StdoutLine: {'line': b'copying rviz/viewurdf.rviz -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/rviz\n'}
+[1.650560] (hw3code) StdoutLine: {'line': b'copying rviz/viewatlas.rviz -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/rviz\n'}
+[1.650696] (hw3code) StdoutLine: {'line': b'creating /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/urdf\n'}
+[1.650824] (hw3code) StdoutLine: {'line': b'copying urdf/pantilt.urdf -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/urdf\n'}
+[1.650968] (hw3code) StdoutLine: {'line': b'copying urdf/hw3code -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/urdf\n'}
+[1.651088] (hw3code) StdoutLine: {'line': b'copying urdf/hw3p5.py -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/urdf\n'}
+[1.651234] (hw3code) StdoutLine: {'line': b'copying urdf/threeDOF.urdf -> /home/stevens/Documents/robotics133/robotws/install/hw3code/share/hw3code/urdf\n'}
+[1.664380] (finalprojectcode) StdoutLine: {'line': b'running build_ext\n'}
+[1.664570] (finalprojectcode) StdoutLine: {'line': b'Creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/lib/python3.12/site-packages/finalprojectcode.egg-link (link to .)\n'}
+[1.665236] (finalprojectcode) StdoutLine: {'line': b'Installing finalproject script to /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/lib/finalprojectcode\n'}
+[1.665533] (finalprojectcode) StdoutLine: {'line': b'\n'}
+[1.665667] (finalprojectcode) StdoutLine: {'line': b'Installed /home/stevens/Documents/robotics133/robotws/build/finalprojectcode\n'}
+[1.665789] (finalprojectcode) StdoutLine: {'line': b'running install_data\n'}
+[1.665908] (finalprojectcode) StdoutLine: {'line': b'creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/ament_index\n'}
+[1.665989] (finalprojectcode) StdoutLine: {'line': b'creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/ament_index/resource_index\n'}
+[1.666058] (finalprojectcode) StdoutLine: {'line': b'creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/ament_index/resource_index/packages\n'}
+[1.666140] (finalprojectcode) StdoutLine: {'line': b'copying resource/finalprojectcode -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/ament_index/resource_index/packages\n'}
+[1.666209] (finalprojectcode) StdoutLine: {'line': b'copying package.xml -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode\n'}
+[1.666317] (finalprojectcode) StdoutLine: {'line': b'creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/launch\n'}
+[1.666404] (finalprojectcode) StdoutLine: {'line': b'copying launch/finalproject.launch.py -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/launch\n'}
+[1.666479] (finalprojectcode) StdoutLine: {'line': b'creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/meshes\n'}
+[1.666553] (finalprojectcode) StdoutLine: {'line': b'copying meshes/Bottom.dae -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/meshes\n'}
+[1.667236] (finalprojectcode) StdoutLine: {'line': b'copying meshes/UJ_Shaft.dae -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/meshes\n'}
+[1.667486] (finalprojectcode) StdoutLine: {'line': b'copying meshes/Slider_Base.dae -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/meshes\n'}
+[1.667716] (finalprojectcode) StdoutLine: {'line': b'copying meshes/Platform_Top.dae -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/meshes\n'}
+[1.668128] (finalprojectcode) StdoutLine: {'line': b'copying meshes/Slider_Shaft.dae -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/meshes\n'}
+[1.668351] (finalprojectcode) StdoutLine: {'line': b'creating /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/urdf\n'}
+[1.668497] (finalprojectcode) StdoutLine: {'line': b'copying urdf/temp.urdf -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/urdf\n'}
+[1.668641] (finalprojectcode) StdoutLine: {'line': b'copying urdf/stewart.urdf -> /home/stevens/Documents/robotics133/robotws/install/finalprojectcode/share/finalprojectcode/urdf\n'}
+[1.704386] (-) TimerEvent: {}
+[1.707628] (hw3code) CommandEnded: {'returncode': 0}
+[1.722764] (hw3code) JobEnded: {'identifier': 'hw3code', 'rc': 0}
+[1.724683] (finalprojectcode) CommandEnded: {'returncode': 0}
+[1.735350] (finalprojectcode) JobEnded: {'identifier': 'finalprojectcode', 'rc': 0}
+[1.736302] (-) EventReactorShutdown: {}
